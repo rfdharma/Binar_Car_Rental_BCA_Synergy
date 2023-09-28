@@ -1,0 +1,237 @@
+#logo-primary{
+    width: 100px;
+    height: 34px;
+    border-radius: 0px;
+    background-color: #0D28A6;
+}
+
+*{
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+.jumbotron{
+    padding-top: 100px;
+    background: #F1F3FF;
+}
+.hero-desc button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-radius: 2px;
+    background: #5CB85F;
+    border-color: #5CB85F;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 16px;
+}
+.text-normal-weight {
+    font-size: 14px;
+}
+.footer{
+    background: white;
+    position: absolute;
+    width: 100vw;
+}
+.social{
+    padding: 0;
+}
+.h4{
+    padding: 15px 0px;
+}
+.social li{
+    display: inline-block;
+    background-color: #0D28A6;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    padding: 0cm;
+}
+.social li a i{
+    padding-top: 7px;
+    color: #fff;
+    transition: .3s;
+    font-size: 20px;
+}
+.card {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.card i{
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    padding: 0cm;
+    padding-top: 2px;
+}
+.testimony-section{
+    padding-top: 100px;
+    font-family: Helvetica;
+}
+
+.testimony-section .testimony-title h1{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.testimony-section .testimony-title p{
+    color: #000;
+    margin-top: 16px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.img-profile{
+    /*margin-left: 36px;*/
+    /*margin-top: 64px;*/
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    /*border-radius: 80px;*/
+    /*background: lightgray 50% / cover no-repeat;*/
+}
+
+.testimony-section .card{
+    border-radius: 8px;
+    background: #F1F3FF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.testimony-section .container-fluid{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.carousel{
+    margin-top: 24px;
+    text-align: center;
+}
+
+.carousel .prev{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    margin-left: 24px;
+    background-color: #FFFFFF;
+    border-color: #D4D4D4;
+}
+
+.carousel .next{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    margin-left: 24px;
+    background-color: #FFFFFF;
+    border-color: #D4D4D4;
+}
+.carousel svg{
+    margin-left: -6.5px;
+    margin-top: -5px;
+}
+.carousel .btn:hover {
+    background-color: #5CB85F;
+    & path {
+        stroke: #ffff;
+    }
+}
+
+/*.testimony-desc{*/
+/*    gap: 8px;*/
+/*    margin-left: 32px;*/
+/*    margin-top: 32px;*/
+/*}*/
+
+.testimony-section .testimony-desc p{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+}
+
+.testimony-section .testimony-desc h1{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+.faq-section h1 {
+    color: #000;
+    text-align: center;
+    /* Heading/24/Bold */
+    font-family: Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 150% */
+}
+
+.faq-section p {
+    color: #000;
+    text-align: center;
+
+    /* Body/14/Light */
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+.faq-section h2 {
+    color: #000;
+    /* Body/14/Light */
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+.accordion-item {
+    margin-bottom: 16px;
+}
+
+/* Rounded border for middle accordion items */
+.accordion-item.middle-accordion {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Adjust padding to avoid cutting off the outline */
+.accordion-button {
+    padding: 1rem 1.25rem;
+}
+
+.footer-square-logo{
+    width: 100px;
+    height: 34px;
+    border-radius: 0px;
+}
