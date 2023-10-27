@@ -8,5 +8,12 @@
   "private": false,
   "scripts": {
     "start": "node server/index.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "node-static": "^0.7.11",
+    "nodemin": "^1.0.1",
+    "nodemon": "^3.0.1",
+    "url": "^0.11.3"
   }
 }

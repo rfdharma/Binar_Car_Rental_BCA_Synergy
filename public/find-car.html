@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binar Car Rental</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- font awesome -->
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container pt-2">
+            <a id="logo-primary" href="/" role="button"></a>
+            <button class="navbar-toggler shadow-none btn-lg border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="padding-right: 8px">
+                <div class="offcanvas-header" style="padding-top: 34px">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">BCR</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="padding-top: 0px">
+                    <ul class="navbar-nav justify-content-end gap-3 flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-services-section">Our Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#why-us-section">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimony-section">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq-section">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn rounded-1" href="#" role="button" style="background: #5CB85F; color: #FFFFFF">Register</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <!-- Home Start -->
+    <section class="hero-desc">
+        <div class="mb-5 jumbotron text-left"  >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5 col-lg-5 offset-lg-1 px-md-3 py-md-2 py-lg-5">
+                        <h2><b>Sewa & Rental Mobil Terbaik di <br> Surabaya</b></h2>
+                        <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil berkualitas <br>
+                            terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu <br> untuk sewa mobil selama 24 jam</p>
+                    </div>
+                    <div class="col-md-7 col-lg-6 p-2">
+                        <img src="https://i.ibb.co/zFkjjgR/img-car.png" alt="cat" class="img-fluid" style="width: 100%"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home End-->
+
+
+    <section class="mb-5">
+        <div id="search" class="container"style="margin-top: -6%">
+            <div class="card border border-white shadow p-2 w-full">
+                <div class="card-body">
+                    <form id="form_filter_submit">
+                        <div class="row row-cols-md-5 row-cols-1 g-3">
+                            <div>
+                                <label class="form-label">Tipe Driver</label>
+                                <select id="type_driver" class="form-select trigger" required>
+                                    <option value="" disabled selected>Pilih Tipe Driver</option>
+                                    <option value="dengan_sopir">Dengan Sopir</option>
+                                    <option value="tanpa_sopir">Tanpa Sopir (Lepas Kunci)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Tanggal</label>
+                                <input id="date_booking" type="date" class="form-control trigger" placeholder="Pilih Tanggal" onfocus="(this.type='date')" required />
+                            </div>
+                            <div>
+                                <label  class="form-label">Waktu Jemput/Ambil</label>
+                                <select id="booking_time" class="form-select trigger" required>
+                                    <option value="" disabled selected>Pilih Waktu</option>
+                                    <option value="00:00">00:00</option>
+                                    <option value="01:00">01:00</option>
+                                    <option value="02:00">02:00</option>
+                                    <option value="03:00">03:00</option>
+                                    <option value="04:00">04:00</option>
+                                    <option value="05:00">05:00</option>
+                                    <option value="06:00">06:00</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="23:00">23:00</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Jumlah Penumpang (optional)</label>
+                                <input id="total_passengers" type="number" class="form-control trigger" placeholder="Jumlah Penumpang" />
+                            </div>
+                            <div class="d-flex align-items-end justify-content-around">
+                                <button id="clear-btn" type="button" class="btn fw-bold py-2 px-3 text-white" style="background: #FF0000; color: #FFFFFF; border-radius: 2px;" disabled>Reset</button>
+
+                                <button id="load-btn" type="submit" class="btn fw-bold py-2 px-3 text-white" style="background: #5CB85F; color: #FFFFFF; border-radius: 2px;" disabled>Cari Mobil</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <div class="container">
+                <div id="cars-container" class="row row-cols-md-3 row-cols-1 g-3"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Pencarian Mobil -->
+
+</main>
+
+
+
+<!-- Footer Start -->
+<footer style="padding-top: 100px;">
+    <div class="mt-4 pt-5 pb-5 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <p class="pr-5 text-black-50">
+                        Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
+                    </p>
+                    <p class="pr-5 text-black-50">
+                        binarcarrental@gmail.com
+                    </p>
+                    <p class="pr-5 text-black-50">
+                        081-233-334-808
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <p><a href="#ourservices" style="text-decoration: none; color: #858886;">Our services</a></p>
+                    <p><a href="#whyus" style="text-decoration: none; color: #858886;">Why Us</a></p>
+                    <p><a href="#testimonial" style="text-decoration: none; color: #858886;">Testimonial</a></p>
+                    <p><a href="#faq" style="text-decoration: none; color: #858886;">FAQ</a></p>
+                </div>
+                <div class="col-lg-4" style="padding-right: 10%;">
+                    <p class="pr-5 text-black-50">
+                        Connect with us
+                    </p>
+                    <ul class="social">
+                        <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" x="6"
+                                 y="6" fill="none">
+                                <path
+                                        d="M15 1.66663H12.5C11.395 1.66663 10.3352 2.10561 9.55376 2.88701C8.77236 3.66842 8.33337 4.72822 8.33337 5.83329V8.33329H5.83337V11.6666H8.33337V18.3333H11.6667V11.6666H14.1667L15 8.33329H11.6667V5.83329C11.6667 5.61228 11.7545 5.40032 11.9108 5.24404C12.0671 5.08776 12.279 4.99996 12.5 4.99996H15V1.66663Z"
+                                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" x="6"
+                                 y="6" fill="none">
+                                <path
+                                        d="M14.1666 1.66663H5.83329C3.53211 1.66663 1.66663 3.53211 1.66663 5.83329V14.1666C1.66663 16.4678 3.53211 18.3333 5.83329 18.3333H14.1666C16.4678 18.3333 18.3333 16.4678 18.3333 14.1666V5.83329C18.3333 3.53211 16.4678 1.66663 14.1666 1.66663Z"
+                                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                        d="M13.3334 9.47501C13.4362 10.1685 13.3178 10.8769 12.9948 11.4992C12.6719 12.1215 12.161 12.6262 11.5347 12.9414C10.9085 13.2566 10.1987 13.3663 9.50653 13.2549C8.81431 13.1436 8.17484 12.8167 7.67907 12.321C7.1833 11.8252 6.85648 11.1857 6.7451 10.4935C6.63371 9.8013 6.74343 9.09159 7.05865 8.46532C7.37386 7.83905 7.87853 7.32812 8.50086 7.00521C9.12319 6.68229 9.8315 6.56383 10.525 6.66667C11.2325 6.77158 11.8874 7.10123 12.3931 7.60693C12.8988 8.11263 13.2285 8.76757 13.3334 9.47501Z"
+                                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.5834 5.41663H14.5917" stroke="white" stroke-linecap="round"
+                                      stroke-linejoin="round" />
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" x="6"
+                                 y="6" fill="none">
+                                <path
+                                        d="M19.1667 2.49996C18.3687 3.06285 17.4851 3.49338 16.55 3.77496C16.0482 3.19788 15.3812 2.78887 14.6392 2.60323C13.8973 2.41759 13.1163 2.46429 12.4018 2.737C11.6873 3.00972 11.0737 3.49529 10.6442 4.12805C10.2146 4.76082 9.98979 5.51024 10 6.27496V7.10829C8.53557 7.14626 7.08444 6.82147 5.77588 6.16283C4.46733 5.50419 3.34197 4.53215 2.50004 3.33329C2.50004 3.33329 -0.833292 10.8333 6.66671 14.1666C4.95048 15.3316 2.906 15.9157 0.833374 15.8333C8.33337 20 17.5 15.8333 17.5 6.24996C17.4993 6.01783 17.477 5.78629 17.4334 5.55829C18.2839 4.71953 18.8841 3.66055 19.1667 2.49996V2.49996Z"
+                                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a></li>
+                        <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" x="6"
+                                 y="6" fill="none">
+                                <path
+                                        d="M3.33329 3.33337H16.6666C17.5833 3.33337 18.3333 4.08337 18.3333 5.00004V15C18.3333 15.9167 17.5833 16.6667 16.6666 16.6667H3.33329C2.41663 16.6667 1.66663 15.9167 1.66663 15V5.00004C1.66663 4.08337 2.41663 3.33337 3.33329 3.33337Z"
+                                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.3333 5L9.99996 10.8333L1.66663 5" stroke="white" stroke-linecap="round"
+                                      stroke-linejoin="round" />
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" x="6"
+                                 y="6" fill="none">
+                                <path
+                                        d="M13.3333 9.16663V5.83329M17.5 1.66663H2.5V15H6.66667V18.3333L10 15H14.1667L17.5 11.6666V1.66663ZM9.16667 9.16663V5.83329V9.16663Z"
+                                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <p class="pr-5 text-black-50">
+                        Copyright Binar 2022
+                    </p>
+                    <a class="footer-square-logo btn btn-primary" style="border-radius: 0px;background: #0D28A6" href="" role="button"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./scripts/binar.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script type="text/javascript" src="./scripts/app.js"></script>
+<script type="text/javascript" src="./scripts/car.js"></script>
+<script type="text/javascript" src="./scripts/main.js"></script>
+<script>
+    $(document).ready(function () {
+        // Testimonial Carousel
+        let owlNavPrev = '<div class="fs-2 mx-2"><i class="text-success bi bi-arrow-left-circle-fill"></i></div>';
+        let owlNavNext = '<div class="fs-2 mx-2"><i class="text-success bi bi-arrow-right-circle-fill"></i></div>';
+        $(".owl-carousel").owlCarousel({
+            center: true,
+            items: 1,
+            loop: true,
+            nav: true,
+            margin: 30,
+            navText: [owlNavPrev, owlNavNext],
+            responsive: {
+                600: {
+                    items: 2,
+                },
+            },
+        });
+
+        // Hero Car Offset
+        let lenleft = $(".container").offset().left;
+        let pictures = document.getElementById("car-picture");
+        let picture = pictures.getElementsByTagName("img");
+        picture[0].style.right = "-" + lenleft + "px";
+
+        // FAQ dropdown
+        let questions = document.getElementsByClassName("question");
+        Array.prototype.forEach.call(questions, function (question) {
+            let button = question.getElementsByTagName("button");
+
+            button[0].addEventListener("click", function (event) {
+                if (question.classList.contains("active")) {
+                    question.classList.remove("active");
+                } else {
+                    question.classList.add("active");
+                }
+            });
+        });
+    });
+</script>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        // Mengambil referensi ke elemen-elemen yang diperlukan
+        const typeDriverSelect = document.getElementById("type_driver");
+        const dateBookingInput = document.getElementById("date_booking");
+        const timeBookingSelect = document.getElementById("booking_time");
+        const totalPassengersInput = document.getElementById("total_passengers");
+        const loadButton = document.getElementById("load-btn");
+        const clearButton = document.getElementById("clear-btn");
+
+        // Membuat fungsi untuk memeriksa apakah semua field telah diisi
+        function checkAllFieldsFilled() {
+            return typeDriverSelect.value !== "" && dateBookingInput.value !== "" && timeBookingSelect.value !== "" && totalPassengersInput.value !== "";
+        }
+
+        // Mengaktifkan/menonaktifkan tombol "Cari Mobil" berdasarkan kondisi
+        function updateButtonState() {
+            const allFieldsFilled = checkAllFieldsFilled();
+            loadButton.disabled = !allFieldsFilled;
+        }
+
+        // Memantau perubahan di field-field yang diperlukan
+        typeDriverSelect.addEventListener("change", updateButtonState);
+        dateBookingInput.addEventListener("input", updateButtonState);
+        timeBookingSelect.addEventListener("change", updateButtonState);
+        totalPassengersInput.addEventListener("input", updateButtonState);
+
+        // Menambahkan event listener untuk tombol "Cari Mobil"
+        loadButton.addEventListener("click", function () {
+            // Setelah "Cari Mobil" diklik, mengaktifkan tombol "Reset"
+            clearButton.disabled = false;
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
