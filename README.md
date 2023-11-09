@@ -15,12 +15,49 @@
 ```url
 [GET] http://localhost:4000/cars
 ```
+
+#### Sample Response
+```json
+{
+    "status": 200,
+    "message": "Data mobil berhasil didapatkan.",
+    "data": [
+        {
+            "id": 48,
+            "name": "P3",
+            "price": "54.00",
+            "size": "Small",
+            "image": "https://res.cloudinary.com/dguyyz3rj/image/upload/v1699537564/y9gy9rtq1iz7wuqsqymq.png",
+            "created_at": "2023-11-09T13:45:53.744Z",
+            "updated_at": "2023-11-09T13:45:53.744Z"
+        },
+        {
+            "id": 46,
+            "name": "X3 Max",
+            "price": "424.00",
+            "size": "Medium",
+            "image": "https://res.cloudinary.com/dguyyz3rj/image/upload/v1699537353/b4a2ymovagqllxxotg9e.png",
+            "created_at": "2023-11-09T13:42:22.337Z",
+            "updated_at": "2023-11-09T13:42:22.337Z"
+        },
+        ...
+    ]
+}
+```
+
+## Get Cars By Size
+```[ENDPOINT] /cars?size=${size}```
+```url
+[GET] http://localhost:4000/cars?size=${size}
+```
+
 #### Sample Request
 ```json
 {
-  "size": "All"
+  "size": "Small"
 }
 ```
+
 #### Sample Response
 ```json
 {
