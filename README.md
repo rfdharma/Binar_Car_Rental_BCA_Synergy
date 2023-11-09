@@ -121,10 +121,11 @@ or
 ```
 
 #### Sample Request
+```json
 {
   "id": 1
 }
-
+```
 
 #### Sample Response
 ```json
