@@ -1,0 +1,70 @@
+<%- include('layouts/main') %>
+<div class="bg-binar ms-5">
+    <div class="container py-4" style="margin-left: 200px;">
+        <div class="container py-4">
+            <!-- Breadcrumbs -->
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/cars">Cars</a></li>
+                    <li class="breadcrumb-item"><a href="/cars">List Car</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Update Car Information</li>
+                </ol>
+            </nav>
+            <!-- Update Car Information Form -->
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Update Car Information</h5>
+            </div>
+            <form action="/cars/<%= car.id %>?_method=PUT" enctype="multipart/form-data" method="POST"> <!-- Use the correct action attribute -->
+                <div>
+                    <input type="hidden" id="id" name="id" value="<%= car.id %>">
+                    <input type="hidden" name="oldImage" value="<%= car.image %>">
+                </div>
+                <div class="bg-white p-4 mt-4">
+                    <div class="row gap-3">
+                        <div class="row col-12">
+                            <div class="col-2">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col-5">
+                                <input id="name" name="name" required type="text" class="form-control" value="<%= car.name %>"/>
+                            </div>
+                        </div>
+                        <div class="row col-12">
+                            <div class="col-2">
+                                <label for="price">Price per Day</label>
+                            </div>
+                            <div class="col-5">
+                                <input id="price" name="price" required type="number" class="form-control" value="<%= car.price %>" />
+                            </div>
+                        </div>
+                        <div class="row col-12">
+                            <div class="col-2">
+                                <label for="size">Size</label>
+                            </div>
+                            <div class="col-5">
+                                <select id="size" name="size" class="form-select" aria-label="Size">
+                                    <option value="<%= car.size %>" disabled selected hidden><%= car.size %></option>
+                                    <option value="Small">Small</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row col-12">
+                            <div class="col-2">
+                                <label for="image">Image</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="file" id="image" name="image" class="form-control" accept="image/*" />
+                                <label>Max File Size: 2MB</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-binar-outlined-primary">Cancel</button>
+                <button type="submit" class="btn btn-binar-primary text-white">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
