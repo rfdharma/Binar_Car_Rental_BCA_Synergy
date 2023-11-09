@@ -13,8 +13,8 @@ export const getCars = async (req: Request, res: Response) => {
         } else {
             cars = await Car.query();
         }
-        res.status(200).render('index', { cars });
-        // res.json({ status:200, message: 'Data mobil berhasil didapatkan.', data: cars });
+        // res.status(200).render('index', { cars });
+        res.json({ status:200, message: 'Data mobil berhasil didapatkan.', data: cars });
     } catch (error) {
         console.error(error);
         res.status(500).send('Kesalahan dalam mengambil data dari database.');

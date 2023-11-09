@@ -17,11 +17,11 @@ router.get('/cars/create', renderCreateCarPage);
 router.post('/cars/create', upload.single('image'), createCar);
 
 // Render the form for updating a car
-router.get('/cars/:id/edit', renderUpdateCarPage);
+router.get('/cars/edit/:id', renderUpdateCarPage);
 
 router.put('/cars/:id', upload.single('image'), updateCar);
 
 // Delete car
-router.delete('/cars/:id/delete', deleteCar);
+router.delete('/cars/delete/:id', deleteCar);
 
 export default router;

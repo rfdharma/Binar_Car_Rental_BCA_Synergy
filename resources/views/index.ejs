@@ -11,8 +11,8 @@
                   );
                 " aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Cars</a></li>
-                    <li class="breadcrumb-item"><a href="index.html">List Car</a></li>
+                    <li class="breadcrumb-item"><a href="/cars">Cars</a></li>
+                    <li class="breadcrumb-item"><a href="/cars">List Car</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Add New Car</li>
                 </ol>
                 </nav>
@@ -50,7 +50,7 @@
                                 </p>
                                 <div class="d-flex gap-2 mt-5">
                                     <div class="w-50">
-                                        <form action="/cars/<%= car.id %>/delete?_method=DELETE" method="POST">
+                                        <form action="/cars/delete/<%= car.id %>?_method=DELETE" method="POST">
                                             <button type="button" class="py-3 btn btn-outline-danger btn-binar-danger d-flex align-items-center justify-content-center gap-1 w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop<%= car.id %>">
                                                 <img src="../assets/fi_trash-2.svg" /> Hapus
                                             </button>
@@ -78,7 +78,7 @@
                                         </form>
                                     </div>
                                     <div class="w-50">
-                                        <a href="/cars/<%= car.id %>/edit" type="button" id="editCar" class="py-3 btn btn-success btn-binar-success d-flex align-items-center justify-content-center gap-1 w-100">
+                                        <a href="/cars/edit/<%= car.id %>" type="button" id="editCar" class="py-3 btn btn-success btn-binar-success d-flex align-items-center justify-content-center gap-1 w-100">
                                             <img src="/assets/fi_edit.svg" alt="..." />
                                             Edit
                                         </a>
