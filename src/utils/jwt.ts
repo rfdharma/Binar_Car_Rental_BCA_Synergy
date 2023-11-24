@@ -1,11 +1,9 @@
-// jwt.ts
 
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 
 dotenv.config({ path: '../.env' });
 
-// Define the UserTokenDTO
 interface UserTokenDTO {
   id: number;
   email: string;

@@ -14,10 +14,8 @@ cloudinary.config({
     timeout: 60000,
 });
 
-// Konfigurasi penyimpanan Cloudinary
 const storage: StorageEngine = multer.memoryStorage();
 
-// Membuat middleware untuk upload
 const upload: multer.Multer = multer({ storage: storage });
 
 export default upload;

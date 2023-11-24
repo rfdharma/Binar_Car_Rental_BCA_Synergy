@@ -8,8 +8,6 @@ dotenv.config();
 
 const { knexSnakeCaseMappers } = require('objection');
 
-// Update with your config settings.
-
 export const config: { [key: string]: Knex.Config } = {
   development: {
     client: "postgresql",
