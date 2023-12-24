@@ -2,7 +2,7 @@ const ApplicationError = require("./ApplicationError");
 
 class EmailNotRegisteredError extends ApplicationError {
   constructor(email) {
-    super(`${email} tidak terdaftar`);
+    super(`${email} is not registered!`);
     this.email = email;
   }
 

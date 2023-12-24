@@ -2,7 +2,7 @@ const ApplicationError = require("./ApplicationError");
 
 class RecordNotFoundError extends ApplicationError {
   constructor(name) {
-    super(`${name} tidak ditemukan`)
+    super(`${name} not found!`)
   }
 }
 

@@ -2,7 +2,7 @@ const ApplicationError = require('./ApplicationError');
 
 class WrongPasswordError extends ApplicationError {
   constructor() {
-    super('Password Salah');
+    super('Password is not correct!');
   }
 }
 
