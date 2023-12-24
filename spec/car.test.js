@@ -164,7 +164,6 @@ describe('DELETE /v1/cars/:id => Delete a car', () => {
     });
 });
 
-// handleRentCar minta user id tp refnya gak sesuai jd aslinya got 500 "Internal Server Error"
 describe('POST /v1/cars/:id/rent => Customer rent a car', () => {
     const rentDate = {
         rentStartedAt: faker.date.future(),
